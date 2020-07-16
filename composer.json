@@ -1,0 +1,49 @@
+{
+    "name": "ozankurt/laravel-intl",
+    "description": "Easy to use internationalization functions for Laravel",
+    "keywords": [
+        "laravel",
+        "internationalization",
+        "language",
+        "intl",
+        "i18n",
+        "l10n"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ozan Kurt",
+            "email": "hello@ozankurt.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "laravel/framework": "^7.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "commerceguys/intl": "^1.0.6"
+    },
+    "require-dev": {
+        "orchestra/testbench": "*",
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kurt\\LaravelIntl\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kurt\\LaravelIntl\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kurt\\LaravelIntl\\IntlServiceProvider"
+            ]
+        }
+    }
+}
